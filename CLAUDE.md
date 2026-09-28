@@ -1,4 +1,4 @@
-# The Living Gallery
+# A Little Lost
 
 A static portfolio/blog site — a living gallery of my own photography and
 work from other artists, such as visual art, fine art, music, cinema, design, and more, standing in for social media. Includes a shop
