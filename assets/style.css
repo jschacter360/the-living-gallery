@@ -191,6 +191,25 @@ main {
   color: var(--black);
 }
 
+.tracklist-heading {
+  width: 100%;
+  margin: 1.5rem 0 0;
+  font-size: 11pt;
+  text-transform: uppercase;
+}
+
+.tracklist {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding-left: 0;
+  list-style: none;
+  font-size: 11pt;
+}
+
+.tracklist li + li {
+  margin-top: 0.35rem;
+}
+
 .site-footer {
   flex-shrink: 0;
   padding: 1rem;
