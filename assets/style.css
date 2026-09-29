@@ -154,6 +154,43 @@ main {
   }
 }
 
+.post-audio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.post-audio-cover {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.post-audio-player {
+  display: block;
+  width: 100%;
+  margin-top: 1.5rem;
+  accent-color: var(--red);
+}
+
+.button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.6em 1.5em;
+  border: 2px solid var(--red);
+  color: var(--red);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.button:hover {
+  background: var(--red);
+  color: var(--black);
+}
+
 .site-footer {
   flex-shrink: 0;
   padding: 1rem;
