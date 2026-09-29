@@ -10,8 +10,8 @@ from the `main` branch.
 
 ## Structure
 - index.html — the gallery / landing page / main feed / chronological posts
-- /posts — individual post when clicked on from main feed / images and videos of the art / writing, plain HTML posts
-- /shop — zine and print listings
+- /POSTS — live on main feed in chronological order from newest to oldest 
+- shop.html — zine and print listings
 - /assets — images, fonts, shared css/js
 
 ## Conventions
@@ -19,3 +19,7 @@ from the `main` branch.
 - Image filenames: artist-slug_piece-slug.jpg
 - Commit messages: short, present tense (e.g. "add spring show gallery")
 - Ask before restructuring folders or deleting content — check with me first.
+- Post layout default (see the first `.post` block in index.html): a
+  `.post-meta` row with the date on the far left and the name/location on
+  the far right, above a `.post-photos` grid using the largest ("_lightbox")
+  version of each image, 2 per row, centered.

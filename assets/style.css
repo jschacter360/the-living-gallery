@@ -90,6 +90,63 @@ main {
   padding: 1rem;
 }
 
+.feed-intro {
+  text-align: center;
+}
+
+.feed-welcome {
+  margin: 0;
+  font-size: 24pt;
+}
+
+.feed-tagline {
+  margin: 0.25rem 0 0;
+  font-size: 14pt;
+}
+
+/* --- Posts ---------------------------------------------------------------- */
+.post {
+  margin-top: 2rem;
+}
+
+.post-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.post-date {
+  font-size: 11pt;
+}
+
+.post-caption {
+  font-size: 11pt;
+  text-align: right;
+}
+
+.post-photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.post-photos img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 600px) {
+  .post-photos img {
+    flex: 0 1 calc(50% - 0.5rem);
+    max-width: calc(50% - 0.5rem);
+  }
+}
+
 .site-footer {
   flex-shrink: 0;
   padding: 1rem;
