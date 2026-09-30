@@ -21,5 +21,6 @@ from the `main` branch.
 - Ask before restructuring folders or deleting content — check with me first.
 - Post layout default (see the first `.post` block in index.html): a
   `.post-meta` row with the date on the far left and the name/location on
-  the far right, above a `.post-photos` grid using the largest ("_lightbox")
-  version of each image, 2 per row, centered.
+  the far right, above a `.post-photos` grid using the "_bloginline" version
+  of each image (sized for the feed's display width; "_lightbox" is reserved
+  for a future full-size/zoom view), 2 per row, centered.
