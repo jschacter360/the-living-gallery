@@ -210,6 +210,36 @@ main {
   margin-top: 0.35rem;
 }
 
+/* --- Archive page ---------------------------------------------------------- */
+.archive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1.5rem;
+}
+
+.archive-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.archive-thumb {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.archive-date {
+  margin-top: 0.4rem;
+  font-size: 8pt;
+}
+
+.archive-item:hover .archive-date {
+  text-decoration: underline;
+}
+
 .site-footer {
   flex-shrink: 0;
   padding: 1rem;

@@ -12,6 +12,7 @@ from the `main` branch.
 - index.html — the gallery / landing page / main feed / chronological posts
 - /POSTS — live on main feed in chronological order from newest to oldest 
 - shop.html — zine and print listings
+- archive.html — one-thumbnail-per-post archive of everything on index.html
 - /assets — images, fonts, shared css/js
 
 ## Conventions
@@ -24,3 +25,14 @@ from the `main` branch.
   the far right, above a `.post-photos` grid using the "_bloginline" version
   of each image (sized for the feed's display width; "_lightbox" is reserved
   for a future full-size/zoom view), 2 per row, centered.
+- Every `.post` article in index.html needs a unique, descriptive `id`
+  (kebab-case, e.g. `id="post-paris-heat-waves"`) so archive.html can link
+  straight to it.
+- archive.html convention: when a new post is added to index.html, add one
+  matching entry to the top of the `.archive-grid` (newest first, same order
+  as the main feed). Each entry is an `.archive-item` link to
+  `index.html#<that post's id>`, containing one `.archive-thumb` image (that
+  post's "_thumbnail" file — the first/representative photo for a photo
+  post, or the cover art's thumbnail for an audio post) and an
+  `.archive-date` span with the post's date, shown at 8pt below the
+  thumbnail.
