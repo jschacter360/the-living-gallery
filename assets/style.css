@@ -137,21 +137,39 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 
-.post-photos img {
-  display: block;
+.post-photos > img,
+.post-photos > .post-photos-stack {
   width: 100%;
   max-width: 100%;
+}
+
+.post-photos > img {
+  display: block;
   height: auto;
 }
 
 @media (min-width: 600px) {
-  .post-photos img {
+  .post-photos > img,
+  .post-photos > .post-photos-stack {
     flex: 0 1 calc(50% - 0.5rem);
     max-width: calc(50% - 0.5rem);
   }
+}
+
+.post-photos-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.post-photos-stack img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .post-audio {
