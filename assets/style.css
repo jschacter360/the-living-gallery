@@ -158,6 +158,11 @@ main {
     flex: 0 1 calc(50% - 0.5rem);
     max-width: calc(50% - 0.5rem);
   }
+
+  .post-photos > img.post-photos-full {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
 }
 
 .post-photos-stack {
