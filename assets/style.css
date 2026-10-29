@@ -214,6 +214,101 @@ main {
   color: var(--black);
 }
 
+/* --- Product page ------------------------------------------------------- */
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-gallery {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+  gap: 1.5rem;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.product-gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.product-gallery img {
+  display: block;
+  flex: 0 0 auto;
+  width: min(85vw, 500px);
+  height: auto;
+  scroll-snap-align: center;
+}
+
+.product-info {
+  width: 100%;
+  margin-top: 0;
+  text-align: left;
+}
+
+.product-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.product-purchase {
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.product-heading {
+  flex: 1 1 400px;
+  max-width: 700px;
+}
+
+.product-name {
+  margin: 0;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.product-description {
+  margin-top: 0.25rem;
+  font-size: 12pt;
+}
+
+.product-details {
+  margin-top: 1.5rem;
+  max-width: 700px;
+  font-size: 11pt;
+}
+
+.product-details-label {
+  margin: 0;
+}
+
+.product-details-list {
+  margin: 0.4rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.product-purchase .button {
+  margin-top: 0;
+}
+
+.product-price {
+  margin-top: 0.75rem;
+  font-size: 1.2rem;
+}
+
+.product-shipping {
+  font-size: 0.7rem;
+}
+
 .tracklist-heading {
   width: 100%;
   margin: 1.5rem 0 0;
@@ -297,6 +392,38 @@ main {
 }
 
 .archive-item:hover .archive-date {
+  text-decoration: underline;
+}
+
+/* --- Shop page --------------------------------------------------------- */
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.shop-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shop-thumb {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.shop-meta {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 0.6rem;
+  font-size: 11pt;
+}
+
+.shop-item:hover .shop-name {
   text-decoration: underline;
 }
 
